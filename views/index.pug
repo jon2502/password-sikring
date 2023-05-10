@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 = title 
+  form(action="/create" method="post")
+    input(type="text" id="username", name="username")
+    input(type="text" id="password", name="password")
+    input(type="submit", value='create')
